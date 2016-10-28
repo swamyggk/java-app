@@ -8,9 +8,7 @@ create table users
  
 alter table users
   add constraint USER_PK primary key (USERNAME);
- 
----------------------
- 
+
 -- Create table
 create table user_roles
 (
@@ -24,8 +22,6 @@ alter table user_roles
  
 alter table user_roles
   add constraint USER_ROLE_UK unique (USERNAME, USER_ROLE);
-  
--------------------------------
   
 insert into users (USERNAME, PASSWORD, ENABLED)
 values ('dbuser1', '12345', 1);
